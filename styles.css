@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-
 }
 
 html {
@@ -43,7 +42,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* reset */
 
 header {
-    height: 100svh;
+    min-height: 100svh;
 }
 
 /* nav */
@@ -114,16 +113,17 @@ button:hover {
 
 #slider {
     height: 89svh;
-    background-image: linear-gradient(90deg, rgba(31,32,42,0.14), rgba(31,32,42,0.0)),
+    background-image: linear-gradient(269.82deg, rgba(20, 23, 22, 0.2403) 45.08%, rgba(20, 23, 22, 0.8188) 95.98%),
     url('assests/bg.png');
+    background-blend-mode: lighten;
     background-position: 40%;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 7.812vw;
-    padding: 5.729vw 2.917vw;
+    padding: 5.729vw 180px;
 }
 
 #slider .para {
@@ -187,8 +187,8 @@ button:hover {
     display: grid;
     padding: 4.01vw 2.604vw 2.604vw 2.604vw;
     gap: 1.354vw;
-    border-left: 0.156vw solid #FF6712;
-    background: #1A1B25;
+    border-left: 0.156vw solid #FF9819;
+    background: #181B1A;
     box-shadow: 0.833vw 1.042vw 2.344vw 0 #0000001A;
 }
 
@@ -204,7 +204,7 @@ form button {
 
 input,textarea {
     padding: 0.885vw 1.302vw;
-    background-color: #262731;
+    background-color: #242827;
     color: #D3D4D6;
     resize: none;
 }
@@ -240,7 +240,7 @@ fieldset {
 /* grid */
 
 section {
-    padding: 2.6042vw 15.625vw;
+    padding: 2.6042vw 13.0208vw;
     background: #F8F8F8;
 }
 
@@ -303,12 +303,13 @@ section {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
     gap: 1.0417vw 1.5625vw;
 }
 
 .box {
     display: flex;
+    height: 100%;
     flex-direction: column;
     padding: 1.5625vw;
     gap: 2.6042vw;
@@ -461,7 +462,7 @@ section {
 
 #instruct {
     background: #EDF9F6;
-    padding: 5.7292vw 12.5vw;
+    padding: 5.7292vw 13.0208vw;
 }
 
 #instruct h1 {
@@ -509,7 +510,7 @@ section {
 
 
 #faq {
-    padding: 9.375vw 14.0625vw;
+    padding: 9.375vw 13.0208vw;
     display: grid;
     gap: 4.1667vw;
     background-color: #fff;
@@ -763,6 +764,10 @@ footer {
         line-height: normal;
     }
 
+    .para .text {
+        gap: 15px;
+    }
+
 
     #form-area {
         font-size: 14px;
@@ -790,6 +795,10 @@ footer {
         min-width: 16.6667rem;
         gap: 1.1111rem;
         width: 450px;
+    }
+
+    #slider .text > p:nth-of-type(1) {
+        font-size: 16px;
     }
 
     #slider img {
@@ -840,7 +849,7 @@ footer {
 
         #box-container {
 
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, auto);
 
         }
 
@@ -865,6 +874,11 @@ footer {
         .box > .user {
             font-size: 16px;
             line-height: 17px;
+            gap: 10px;
+        }
+
+        #lawyers {
+            padding: 22px 26px
         }
 
         #lawyers > h1 {
@@ -902,6 +916,7 @@ footer {
 
         #benefits-banner {
             flex-direction: column-reverse;
+            padding: 22px 26px;
         }
 
         #benefits-banner .image img {
@@ -911,10 +926,16 @@ footer {
         #benefits-side {
             font-size: 14px;
             gap: 25px;
+            display: grid;
+        }
+
+        #benefits-banner button {
+            justify-self: center;
         }
 
         #benefits-side h2 {
             font-size: 36px;
+            text-align: center;
         }
 
         #benefit-list {
@@ -1104,12 +1125,8 @@ footer {
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
-    transition: background 0.3s;
 }
 
-.menu__item:hover {
-    background-color: #CFD8DC;
-}
 
 #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
@@ -1179,8 +1196,8 @@ footer {
     }
 
     form input, form textarea {
-        padding: 10px 5px;
-        width: 300px;
+        padding: 10px 15px;
+        width: 68.571vw;
     }
 
     #slider button {
@@ -1226,21 +1243,31 @@ footer {
         line-height: 32px;
     }
 
+    .box {
+        box-shadow: none;
+    }
+
 
     #left, #i-left, #right, #i-right {
-        border-radius:  50%;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        color: black;
         position: absolute;
-        top: 50%;
-        padding: 7px 10px !important; 
+        top: 30%;
+        padding: 120px 10px !important; 
         display: inline;
     }
 
     #left, #i-left {
         left: 2%;
+        background-image: url('assests/left.svg');
     }
 
     #right, #i-right {
         right: 2%;
+        background-image: url('assests/right.svg');
     }
 
     #instruct {
@@ -1251,6 +1278,7 @@ footer {
         overflow-x: scroll;
         display: flex;
         scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
         position: relative;
         scroll-behavior: smooth;
         scrollbar-width: none;
@@ -1263,8 +1291,18 @@ footer {
         flex: 0 0 100%;
     }
 
+    #top {
+        padding: 22px 26px;
+    }
+
+    #top .text {
+        width: auto;
+        gap: 15px;
+    }
+
     button {
         padding: 12px 22px !important;
+        gap: 5px;
         border-radius: 50px;
     }
 
