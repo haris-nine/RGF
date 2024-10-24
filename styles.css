@@ -55,9 +55,11 @@ nav {
     align-items: center;
 }
 
-.logo {
-    width: 12.2396vw;
-}
+
+
+padding-top: 11.2083vw;
+padding-bottom: 13.2083vw;
+
 
 
 
@@ -114,7 +116,7 @@ button:hover {
 #slider {
     height: 89svh;
     background-image: linear-gradient(269.82deg, rgba(20, 23, 22, 0.2403) 45.08%, rgba(20, 23, 22, 0.8188) 95.98%),
-    url('assests/bg.png');
+    url('assests/bg.jpg');
     background-blend-mode: lighten;
     background-position: 40%;
     background-size: cover;
@@ -445,6 +447,7 @@ section {
     display: flex;
     gap: 1.3021vw;
     color: #262829;
+    align-items: start;
 }
 
 #benefit-list .benefit img {
@@ -740,8 +743,11 @@ footer {
 @media screen and (max-width: 768px) {
 
     .logo {
-        width: 150px;
         padding-left: 10px;
+    }
+
+    .logo img {
+            width: 220px;
     }
 
     #slider {
@@ -847,6 +853,10 @@ footer {
     
         }
 
+        #boxes {
+            padding: 11.2083vw 0vw 13.2083vw 0;
+        }
+
         #box-container {
 
             grid-template-columns: repeat(2, auto);
@@ -854,7 +864,7 @@ footer {
         }
 
         .box {
-            padding: 20px;
+            padding: 30px;
         }
 
         .box > .text span {
@@ -878,7 +888,7 @@ footer {
         }
 
         #lawyers {
-            padding: 22px 26px
+            padding: 55px 26px;
         }
 
         #lawyers > h1 {
@@ -888,11 +898,13 @@ footer {
 
         #cards {
             flex-direction: column;
+            gap: 18px;
+            margin: 30px 0;
         }
 
-        .card {
+        #cards .card {
             flex-direction: column;
-            padding: 25px;
+            padding: 30px;
             gap: 20px;
         }
 
@@ -916,11 +928,11 @@ footer {
 
         #benefits-banner {
             flex-direction: column-reverse;
-            padding: 22px 26px;
+            padding: 45px 26px;
         }
 
         #benefits-banner .image img {
-            width: 71.615vw;
+            width: 93.099vw;
         }
 
         #benefits-side {
@@ -984,9 +996,9 @@ footer {
         }
 
         #faq h1 { 
-            font-size: 36px;
-            line-height: 38px;
-            text-align: center;
+            font-size: 34px;
+            line-height: 36px;
+            text-align: left;
         }
 
         summary {
@@ -1004,10 +1016,12 @@ footer {
         #banner {
             flex-direction: column;
             padding: 9.375vw 14.0625vw;       
+            align-items: start;
         }
 
         #banner .image img {
             width: 250px;
+            margin-left: -25px;
         }
 
         #banner .text {
@@ -1107,12 +1121,13 @@ footer {
     align-items: center;
     position: fixed;
     visibility: hidden;
+    top: 10%;
     right: -100%;
     margin: 0;
-    padding: 3vw;
+    padding: 7vw 3vw;
     list-style: none;
     text-align: center;
-    background-color: #ECEFF1;
+    background-color: #181B1A;
     box-shadow: 0.0556rem 0rem 0.3333rem rgba(0, 0, 0, .2);
     transition: 0.3s;
 }
@@ -1172,7 +1187,7 @@ footer {
     #slider {
         gap: 3.3333rem;
         background-image: linear-gradient(90deg, rgba(31,32,42,0.614), rgba(31,32,42,0.2)),
-        url('assests/bg.png');
+        url('assests/bg.jpg');
         height: auto;
         min-height: 100svh;
         padding: auto;
@@ -1244,7 +1259,12 @@ footer {
     }
 
     .box {
+        margin-top: 20px;
         box-shadow: none;
+    }
+
+    #benefits-banner .image img {
+        width: 88.741vw;
     }
 
 
@@ -1256,7 +1276,7 @@ footer {
         color: black;
         position: absolute;
         top: 30%;
-        padding: 120px 15px !important; 
+        padding: 120px 10px !important; 
         display: inline;
     }
 
@@ -1308,3 +1328,13 @@ footer {
 
 
 }
+
+
+
+
+
+faq heading left align
+RGF banner left align
+
+footer banner image left align
+
