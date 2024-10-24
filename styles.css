@@ -57,12 +57,6 @@ nav {
 
 
 
-padding-top: 11.2083vw;
-padding-bottom: 13.2083vw;
-
-
-
-
 #burg {
     display: none;
 }
@@ -88,6 +82,10 @@ padding-bottom: 13.2083vw;
 .image {
     display: grid;
     align-items: center;
+}
+
+.ctas > .phone  img {
+    width: 1.0417vw;
 }
 
 button {
@@ -1328,13 +1326,3 @@ footer {
 
 
 }
-
-
-
-
-
-faq heading left align
-RGF banner left align
-
-footer banner image left align
-
