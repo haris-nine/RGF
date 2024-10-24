@@ -27,8 +27,10 @@ body {
 
 
 
-input, button, textarea, select {
+input, button, textarea, select, a, summary {
     font: inherit;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -77,6 +79,10 @@ nav {
     font-weight: 500;
     color: #FF9819;
     justify-content: center;
+}
+
+.phone:hover {
+    text-decoration: underline;
 }
 
 .image {
@@ -978,6 +984,7 @@ footer {
         #i-cards {
             padding-top: 40px;
             gap: 30px;
+            width: 105%
         }
 
         #i-cards p {
@@ -1045,7 +1052,7 @@ footer {
         }
 
         #top .image img {
-            width: 75px;
+            width: 60px;
         }
 
         #bottom img {
@@ -1057,7 +1064,7 @@ footer {
         }
 
         #top .text {
-            font-size: 16px;
+            font-size: 14px;
         }
 
         #top .text {
@@ -1090,7 +1097,6 @@ footer {
     right: 25px;
     width: 1.4444rem;
     height: 1.4444rem;
-    cursor: pointer;
     z-index: 1;
 }
 
@@ -1267,29 +1273,39 @@ footer {
 
 
     #left, #i-left, #right, #i-right {
+        background-image: url('assests/arrow.svg');
         background-color: transparent;
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        color: black;
-        position: absolute;
-        top: 30%;
-        padding: 120px 10px !important; 
+        background-size: 100%;
+        padding: 30px 30px !important; 
         display: inline;
+        border-radius: 50%;
+    }
+
+    #left:focus, #i-left:focus, #right:focus, #i-right:focus {
+        background-image: url('assests/hover-arrow.svg');
+        border: none;
     }
 
     #left, #i-left {
         left: 2%;
-        background-image: url('assests/left.svg');
+        transform: scaleX(-1);
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        gap: 20px;
     }
 
     #right, #i-right {
         right: 2%;
-        background-image: url('assests/right.svg');
     }
 
     #instruct {
         position: relative;
+        padding: 40px 13.0208vw;
     }
 
     #i-cards {
@@ -1307,6 +1323,10 @@ footer {
         display: flex;
         scroll-snap-align: start;
         flex: 0 0 100%;
+    }
+
+    #faq h1 {
+        font-size: 28px;
     }
 
     #top {
