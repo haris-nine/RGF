@@ -10,8 +10,7 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
+
 }
 
 html {
@@ -26,10 +25,6 @@ body {
 
 }
 
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-}
 
 input, button, textarea, select {
     font: inherit;
@@ -63,9 +58,6 @@ nav {
     width: 12.2396vw;
 }
 
-.image {
-    width: 1.0417vw;
-}
 
 
 #burg {
@@ -105,7 +97,7 @@ button {
     display: flex;
     align-items: center;
     gap: 0.521vw;
-    transition: 300ms;
+    transition: 300ms linear;
 }
 
 button:hover {
@@ -233,18 +225,224 @@ fieldset {
     gap: 1.042vw;
 }
 
+/* slider */ 
+
+/* grid */
+
+section {
+    padding: 2.6042vw 15.625vw;
+    background: #F8F8F8;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, rgba(225, 226, 238, 0) 0%, #E1E2EE 50%, rgba(225, 226, 238, 0) 100%);
+    border-image-slice: 1;
+}
+
+#grids {
+    display: grid;
+    grid-template-columns: repeat(4, 15.625vw);
+    gap: 2.0833vw;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3021vw;
+    padding: 1.0417vw;
+    background: #F8F8F8;
+}
+
+.grid img {
+    max-width: none;
+}
 
 
+.grid span {
+    font-size: 2.6042vw;
+    font-weight: 600;
+    line-height: 3.9063vw;
+    color: #1A1B25;
+}
+
+.grid p {
+    color: #61676A;
+}
+
+/* grid */
+
+/* boxes */ 
+
+#boxes {
+    padding-top: 5.2083vw;
+    padding-bottom: 5.2083vw;
+}
+
+#boxes > h1 {
+    font-size: 2.8646vw;
+    font-weight: 600;
+    line-height: 3.151vw;
+    text-align: center;
+    color: #262829;
+    margin-bottom: 2.8646vw;
+}
+
+#box-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.0417vw 1.5625vw;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5625vw;
+    gap: 2.6042vw;
+    box-shadow: 0 1.1458vw 5.2083vw 0 #00000026;
+    background-color: #FFFFFF;
+}
+
+.box > .text {
+    display: grid;
+    gap: 0.8854vw;
+}
+
+.box > .text p {
+    font-size: 1.0417vw;
+    line-height: 1.3542vw;
+    font-family: "Noto Sans", sans-serif;
+    color: #5F6264;
+
+}
+
+.box > .text span {
+    font-size: 1.5625vw;
+    font-weight: 600;
+    line-height: 1.7188vw;
+}
 
 
+.box img {
+    max-width: none;
+}
+
+.box > .user {
+    display: flex;
+    align-items: center;
+    gap: 1.0417vw;
+    font-size: 1.1458vw;
+    font-weight: 500;
+    line-height: 1.4896vw;
+    color: #262829;
+}
 
 
+#left, #right {
+    display: none;
+}
+
+/* boxes */
+
+/* lawyers */ 
+
+#lawyers {
+    background: #EDF9F6;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5313vw;
+    padding: 6.25vw 13.0208vw;
+    align-items: center;
+}
+
+#lawyers > h1 {
+    font-size: 2.8646vw;
+    font-weight: 600;
+    line-height: 3.151vw;
+    color: #262829;
+    text-align: center;
+}
+
+#cards {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    background: #fff;
+    box-shadow: 0 1.1458vw 5.2083vw 0 #00000026;
+    font-size: 1.0417vw;
+    line-height: 1.3542vw;
+    font-family: "Noto Sans", sans-serif;
+    color: #5F6264;
+    padding: 1.5625vw;
+    gap: 2.6042vw;
+    align-items: start;
+}
 
 
+.card .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0417vw;
+}
+
+.card h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8229vw;
+    color: #262829;
+}
+
+/* laywers */
+
+/* b-benefits */ 
+
+#benefits-banner {
+    display: flex;
+    gap: 7.8125vw;
+    padding: 5.2083vw 13.0208vw;
+}
+
+#benefits-side {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6042vw;
+    justify-content: center;
+}
+
+#benefit-text {
+    display: grid;
+    gap: 3.125vw;
+}
+
+#benefit-text h2 {
+    font-size: 2.0833vw;
+    font-weight: 600;
+    color: #262829;
+}
+
+#benefit-list {
+    display: grid;
+    gap: 0.8854vw;
+}
+
+#benefit-list .benefit {
+    display: flex;
+    gap: 1.3021vw;
+    color: #262829;
+}
+
+#benefit-list .benefit img {
+    width: 3.125vw;
+}
+
+#benefits-banner .image img {
+    width: 33.8542vw;
+}
 
 
-
-
+/* b-benefits */
 
 
 
@@ -322,6 +520,15 @@ fieldset {
         display: block;
     }
 
+    #slider .para button img,.menu__item img {
+        width: 10px;
+        max-width: none;
+    }
+
+    .phone {
+        gap: 10px;
+    }
+
 
     #slider .para {
         min-width: 16.6667rem;
@@ -350,6 +557,124 @@ fieldset {
         padding: 10vw;
     }
 
+    
+    #grids {
+        grid-template-columns: repeat(2, 15.625vw);
+        justify-content: space-around;
+        padding: 3vw 0vw;
+    }
+
+    .grid img {
+        width: 45px;
+        }
+    
+        .grid span {
+            font-size: 27px;
+            line-height: 40.2px;
+        }
+
+        .grid p {
+            font-size: 12px;
+        }
+    
+        section {
+            padding: 25px;
+    
+        }
+
+        #box-container {
+
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .box {
+            padding: 20px;
+        }
+
+        .box > .text span {
+            font-size: 25px;
+            line-height: 26px;
+        }
+
+        .box > .text p {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        div:nth-of-type(1) .user  img {
+            width: 50px;
+        }
+
+        .box > .user {
+            font-size: 16px;
+            line-height: 17px;
+        }
+
+        #lawyers > h1 {
+            font-size: 30px;
+            line-height: 32px;
+        }
+
+        #cards {
+            flex-direction: column;
+        }
+
+        .card {
+            flex-direction: column;
+            padding: 25px;
+            gap: 20px;
+        }
+
+        .card .image img {
+            width: 100px;
+        }
+
+        .card .text {
+            gap: 10px;
+        }
+
+        .card h2 {
+            font-size: 24px;
+            line-height: normal;
+        }
+
+        .card span, .card p {
+            font-size: 14px;
+            line-height: 16px
+        }
+
+        #benefits-banner {
+            flex-direction: column-reverse;
+        }
+
+        #benefits-banner .image img {
+            width: 71.615vw;
+        }
+
+        #benefits-side {
+            font-size: 14px;
+            gap: 25px;
+        }
+
+        #benefits-side h2 {
+            font-size: 36px;
+        }
+
+        #benefit-list {
+            gap: 20px;
+        }
+
+        #benefit-list .benefit {
+            gap: 10px;
+        }
+
+        #benefit-list .benefit img {
+            width: 45px;
+        }
+    
+    
+
 
 #menu__toggle {
     opacity: 0;
@@ -368,7 +693,6 @@ fieldset {
     z-index: 1;
 }
 
-  /* добавляем "гамбургер" */
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -442,9 +766,22 @@ fieldset {
 
 
 
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 540px) {
     html {
         font-size: 12px;
+    }
+
+    header {
+        height: auto;
     }
 
     #slider {
@@ -488,7 +825,56 @@ fieldset {
         max-width: none;
     }
 
-    .phone {
-        gap: 10px;
+    #grids {
+        grid-template-columns: repeat(2, 160px);
+        justify-content: space-around;
+        padding: 3vw 0vw;
     }
+
+    
+    #box-container {
+        overflow-x: scroll;
+        display: flex;
+        justify-content: start;
+        scroll-snap-type: x mandatory;
+        position: relative;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    }
+
+    .box {
+        flex-direction: column;
+        display: flex;
+        scroll-snap-align: start;
+        flex: 0 0 100%;
+    }
+
+    #boxes {
+        position: relative;
+    }
+
+    #boxes h1 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+
+    #left, #right {
+        border-radius:  50%;
+        position: absolute;
+        top: 50%;
+        padding: 7px 10px;
+        display: inline;
+    }
+
+    #left {
+        left: 2%;
+    }
+
+    #right {
+        right: 2%;
+    }
+
+
+
 }
