@@ -18,4 +18,3 @@ var iback = document.getElementById('i-left');
 iback.onclick = function () {
     document.getElementById('i-cards').scrollLeft -= 300;
 };
-
